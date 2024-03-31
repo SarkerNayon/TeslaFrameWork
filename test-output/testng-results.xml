@@ -1,31 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on MAC (ccc14aa4d6b153feea6c174aa5e394cd)] -> xpath: //button[text()='Order with Card']] --> element not is clicked<br>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-03-30T20:46:14 PDT" name="Default suite" finished-at="2024-03-30T20:46:21 PDT" duration-ms="7095">
+  <suite started-at="2024-03-30T23:09:11 PDT" name="Default suite" finished-at="2024-03-30T23:09:19 PDT" duration-ms="8500">
     <groups>
     </groups>
-    <test started-at="2024-03-30T20:46:14 PDT" name="Default test" finished-at="2024-03-30T20:46:21 PDT" duration-ms="7095">
+    <test started-at="2024-03-30T23:09:11 PDT" name="Default test" finished-at="2024-03-30T23:09:19 PDT" duration-ms="8500">
       <class name="com.placeAnOrderTest.CyberTruck">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.placeAnOrderTest.CyberTruck@18d87d80]" started-at="2024-03-30T20:46:14 PDT" name="OpenBrowser" finished-at="2024-03-30T20:46:17 PDT" duration-ms="2735" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.placeAnOrderTest.CyberTruck@2d52216b]" started-at="2024-03-30T23:09:11 PDT" name="OpenBrowser" finished-at="2024-03-30T23:09:18 PDT" duration-ms="7349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="cyberTruckTest()[pri:0, instance:com.placeAnOrderTest.CyberTruck@18d87d80]" started-at="2024-03-30T20:46:17 PDT" name="cyberTruckTest" finished-at="2024-03-30T20:46:21 PDT" duration-ms="4249" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="cyberTruckTest()[pri:0, instance:com.placeAnOrderTest.CyberTruck@2d52216b]" started-at="2024-03-30T23:09:18 PDT" name="cyberTruckTest" finished-at="2024-03-30T23:09:19 PDT" duration-ms="275" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Element <a class="tds-link tds-text--caption" href="/cybertruck/design"> could not be scrolled into view
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbfcebd6-579e-4f6b-9190-d5425db7e95e, clickElement {id=bf9d2ac5-6a30-404e-a4f3-d189173c7dec}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.1, moz:accessibilityChecks: false, moz:buildID: 20240321230221, moz:debuggerAddress: 127.0.0.1:18109, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.4.0, moz:processID: 22453, moz:profile: /var/folders/tx/j4ppfs714zb..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:18109/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (cbfcebd6-579e-4f6b-9190-d5425db7e95e)] -> xpath: (//a[@href='/cybertruck/design'])[1]]
+Session ID: cbfcebd6-579e-4f6b-9190-d5425db7e95e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at com.common.CommonActions.click(CommonActions.java:17)
-at com.object.OrderPage.orderPage(OrderPage.java:19)
-at com.placeAnOrderTest.CyberTruck.cyberTruckTest(CyberTruck.java:12)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="tds-link tds-text--caption" href="/cybertruck/design"> could not be scrolled into view
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbfcebd6-579e-4f6b-9190-d5425db7e95e, clickElement {id=bf9d2ac5-6a30-404e-a4f3-d189173c7dec}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.1, moz:accessibilityChecks: false, moz:buildID: 20240321230221, moz:debuggerAddress: 127.0.0.1:18109, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.4.0, moz:processID: 22453, moz:profile: /var/folders/tx/j4ppfs714zb..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:18109/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (cbfcebd6-579e-4f6b-9190-d5425db7e95e)] -> xpath: (//a[@href='/cybertruck/design'])[1]]
+Session ID: cbfcebd6-579e-4f6b-9190-d5425db7e95e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.object.LandingPage.vehicleHoverOver(LandingPage.java:23)
+at com.placeAnOrderTest.CyberTruck.cyberTruckTest(CyberTruck.java:11)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,14 +84,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on MAC (ccc14aa4d6b153feea6c174aa5e394cd)] -> xpath: //button[text()='Order with Card']] --> element not is clicked<br>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- cyberTruckTest -->
-        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:com.placeAnOrderTest.CyberTruck@18d87d80]" started-at="2024-03-30T20:46:21 PDT" name="closingBrowser" finished-at="2024-03-30T20:46:21 PDT" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:com.placeAnOrderTest.CyberTruck@2d52216b]" started-at="2024-03-30T23:09:19 PDT" name="closingBrowser" finished-at="2024-03-30T23:09:19 PDT" duration-ms="860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingBrowser -->

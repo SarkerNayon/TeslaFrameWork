@@ -6,8 +6,8 @@
       <class name="com.placeAnOrderTest.CyberTruck">
         <methods>
           <include name="cyberTruckTest"/>
-          <include name="OpenBrowser"/>
           <include name="closingBrowser"/>
+          <include name="OpenBrowser"/>
         </methods>
       </class> <!-- com.placeAnOrderTest.CyberTruck -->
     </classes>
